@@ -25,3 +25,49 @@ To run the Todo List App on your local machine:
 
    ```bash
    git clone https://github.com/your-username/todo-list-app.gi
+Navigate to the project directory:
+
+bash
+Copy code
+cd todo-list-app
+Install the dependencies:
+
+bash
+Copy code
+npm install
+Start the development server:
+
+bash
+Copy code
+npm start
+Open your browser and go to http://localhost:3000 to view the app.
+
+Usage
+Add a Task: Type in the input field and click the Add button to add a new task.
+Mark as Complete: Click on the task text to toggle between completed and incomplete states.
+Set Priority: Use the dropdown next to each task to set its priority (Low, Medium, High).
+Delete a Task: Click the Delete button (trash icon) to remove a task.
+Filter Tasks: Use the filter buttons (All, Completed, Incomplete) to filter tasks based on their status.
+
+App Component Structure
+ListApp.js
+This is the core component of the app that includes the following features:
+
+useState to manage the state of tasks.
+useRef to reference the input fields.
+Functions for adding, deleting, filtering, and completing tasks.
+A responsive user interface with task priority and filtering options.
+Key Functions:
+addTodo(): Adds a new task to the list.
+toggleComplete(): Toggles the completion status of a task.
+setPriority(): Allows users to set task priority.
+handleDelete(): Deletes a task from the list.
+getFilteredTodos(): Filters the task list based on their status (All, Completed, Incomplete).
+Contributing
+If you'd like to contribute:
+
+Fork the repo
+Create a new branch (git checkout -b feature/your-feature-name)
+Commit your changes (git commit -m 'Add some feature')
+Push to the branch (git push origin feature/your-feature-name)
+Open a Pull Request
