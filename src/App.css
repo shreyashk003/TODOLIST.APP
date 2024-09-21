@@ -1,0 +1,149 @@
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #4b2e39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ecf0f1;
+}
+
+/* Main container (box) styles */
+.box {
+  background-color: #333; /* Dark gray for contrast */
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+  padding: 40px;
+  width: 500px;
+  min-height: 450px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #e74c3c; /* Contrast border in deep red */
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* Heading (h3) styles */
+h3 {
+  color: #ecf0f1; /* Light text color to contrast with dark box */
+  font-size: 28px;
+  font-weight: 700;
+  background-color: #e74c3c; /* Highlight background color */
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+
+h3:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Input styles */
+input[type='text'] {
+  width: 75%;
+  padding: 12px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type='text']:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Button styles */
+button {
+  padding: 12px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Unordered list and list item styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid burlywood;
+  border-right: 5px solid burlywood ;
+  border-top: 5px solid burlywood;
+  border-bottom: 5px solid burlywood;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Trash icon styles */
+.bi-trash3-fill {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.todo-item.completed span:first-child {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.filter-options button {
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-options button:hover {
+  background-color: #4e3ec8;
+}
+
+.priority select {
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+
